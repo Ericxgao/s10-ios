@@ -4,7 +4,7 @@
 global.process = require("./lib/process.polyfill");
 
 import React, { Component } from 'react';
-import { AppRegistry, Text } from 'react-native';
+import { AppRegistry } from 'react-native';
 
 import thunk from 'redux-thunk';
 import { createStore, combineReducers, applyMiddleware } from 'redux';

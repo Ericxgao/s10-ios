@@ -5,5 +5,6 @@
 #import <OneSignal/OneSignal.h>
 #import "METAccount.h"
 #import "MuteChecker.h"
+#import <RNGoogleSignin/RNGoogleSignin.h>
 
 extern NSString *formatLogMessageTimestamp(NSDate *timestamp);

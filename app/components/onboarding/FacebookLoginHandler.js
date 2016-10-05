@@ -13,10 +13,6 @@ class FacebookLoginHandler {
         type: 'LOGIN_FROM_FB',
       })
 
-      if (result.isNewUser) {
-        // TODO(qimingfang): navigate through onboarding navigator
-      }
-
       return Promise.resolve(result);
     })
     .catch(err => {

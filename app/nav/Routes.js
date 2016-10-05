@@ -520,6 +520,35 @@ class Router {
     }
   }
 
+  getGoogleLoginRoute() {
+    const self = this;
+    const GoogleLoginScreen = require('../components/onboarding/GoogleLoginScreen');
+
+    return {
+      renderScene(navigator) {
+        return <GoogleLoginScreen
+          navigator={navigator}
+          onFinishedLogin={(isValid) => {
+            // if there is an error, it will pop up error.
+            console.log('honk');
+            if (isValid) {
+              const route = self.getProfileRoute({
+                userId: self.props.ddp.currentUserId,
+                isEditable: true });
+              navigator.push(route);
+            } else {
+              this.props.dispatch({
+                type: 'INVALID_EMAIL_ERROR',
+                title: 'Invalid Email',
+                message: 'Sorry, you need a valid email for your university to log in.',
+              });
+            }
+          }}
+        />
+      }
+    }
+  }
+
   getLinkServiceRoute() {
     const self = this;
     return {

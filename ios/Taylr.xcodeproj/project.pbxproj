@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		078FB8271DA4606E00B418A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 078FB8261DA4606E00B418A8 /* GoogleService-Info.plist */; };
 		4AD00249A11FDFD015C379A5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA6C7823A20B63EB451A15E /* Pods.framework */; };
+		4EEF75B9956B4102AD6F138E /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4120F7B4D74E47CF8D6A03C1 /* libRNGoogleSignin.a */; };
+		5EB225E91022434AA4B79C40 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 352D60AB8B0B4C85BE91ECE9 /* libz.tbd */; };
+		8BA066AD8C034834B5405DBB /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B27E5A3927E4AADBE57C05C /* SafariServices.framework */; };
+		9D943C8BA53C48158EBD35E4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76530C2BEA348509245B830 /* AddressBook.framework */; };
+		B7CA97BB3874436991DC662D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5017CE96DF514B61BFBD6450 /* SystemConfiguration.framework */; };
 		E27113F21C2FC51A00BDD54B /* libRCTCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E27113F11C2FC50D00BDD54B /* libRCTCamera.a */; };
 		EA08BDF51C091BF300040D56 /* OneSingalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA08BDF41C091BF300040D56 /* OneSingalProvider.swift */; };
 		EA08BE011C092E8500040D56 /* Taylr-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08BE001C092E8500040D56 /* Taylr-Bridging.m */; };
@@ -105,6 +111,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		07D33DF21DA4B9DC001E9BF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 168297B5B1B74556A80A1F5A /* RNGoogleSignin.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FD355121D3E4A2900D06170;
+			remoteInfo = RNGoogleSignin;
+		};
 		E27113F01C2FC50D00BDD54B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E27113EC1C2FC50D00BDD54B /* RCTCamera.xcodeproj */;
@@ -157,7 +170,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		078FB8261DA4606E00B418A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		168297B5B1B74556A80A1F5A /* RNGoogleSignin.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNGoogleSignin.xcodeproj; path = "../node_modules/react-native-google-signin/ios/RNGoogleSignin.xcodeproj"; sourceTree = "<group>"; };
+		352D60AB8B0B4C85BE91ECE9 /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4120F7B4D74E47CF8D6A03C1 /* libRNGoogleSignin.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNGoogleSignin.a; sourceTree = "<group>"; };
+		5017CE96DF514B61BFBD6450 /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7AA6C7823A20B63EB451A15E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B27E5A3927E4AADBE57C05C /* SafariServices.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		A76530C2BEA348509245B830 /* AddressBook.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		E27113EC1C2FC50D00BDD54B /* RCTCamera.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTCamera.xcodeproj; path = "../node_modules/react-native-camera/ios/RCTCamera.xcodeproj"; sourceTree = "<group>"; };
 		EA08BDF41C091BF300040D56 /* OneSingalProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneSingalProvider.swift; sourceTree = "<group>"; };
 		EA08BE001C092E8500040D56 /* Taylr-Bridging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Taylr-Bridging.m"; sourceTree = "<group>"; };
@@ -287,12 +307,25 @@
 				EA3713AA1BFD28EF00E51980 /* libRCTFBSDKLogin.a in Frameworks */,
 				F9DDF6451BFD434600D7A2FC /* libRNFabricDigits.a in Frameworks */,
 				4AD00249A11FDFD015C379A5 /* Pods.framework in Frameworks */,
+				4EEF75B9956B4102AD6F138E /* libRNGoogleSignin.a in Frameworks */,
+				5EB225E91022434AA4B79C40 /* libz.tbd in Frameworks */,
+				8BA066AD8C034834B5405DBB /* SafariServices.framework in Frameworks */,
+				B7CA97BB3874436991DC662D /* SystemConfiguration.framework in Frameworks */,
+				9D943C8BA53C48158EBD35E4 /* AddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07D33DEE1DA4B9DC001E9BF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07D33DF31DA4B9DC001E9BF0 /* libRNGoogleSignin.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2C9F4D1EF3D7E4C4FBB0AEDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +341,10 @@
 				EA3713911BFD288700E51980 /* libRCTFBSDKCore.a */,
 				F9DDF6A91BFDB2A400D7A2FC /* libRCTVideo.a */,
 				7AA6C7823A20B63EB451A15E /* Pods.framework */,
+				352D60AB8B0B4C85BE91ECE9 /* libz.tbd */,
+				8B27E5A3927E4AADBE57C05C /* SafariServices.framework */,
+				5017CE96DF514B61BFBD6450 /* SystemConfiguration.framework */,
+				A76530C2BEA348509245B830 /* AddressBook.framework */,
 			);
 			name = Frameworks;
 			path = Includes;
@@ -327,6 +364,7 @@
 			isa = PBXGroup;
 			children = (
 				E27113EC1C2FC50D00BDD54B /* RCTCamera.xcodeproj */,
+				168297B5B1B74556A80A1F5A /* RNGoogleSignin.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -581,6 +619,7 @@
 				EA9F354B1A74CC6900E0C65D /* LaunchScreen.xib */,
 				EA9A6ACE1AAFDE19009EDD6D /* Localizable.strings */,
 				EABF2AB51AD04659005880E7 /* InfoPlist.strings */,
+				078FB8261DA4606E00B418A8 /* GoogleService-Info.plist */,
 				EA9F353E1A74CC6900E0C65D /* Taylr-Info.plist */,
 				EA9F35621A74CD8800E0C65D /* Taylr-Bridging.h */,
 				EA08BE001C092E8500040D56 /* Taylr-Bridging.m */,
@@ -736,9 +775,9 @@
 		EA9F35321A74CC6900E0C65D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftMigration = 0700;
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0710;
+				LastSwiftMigration = 700;
+				LastSwiftUpdateCheck = 700;
+				LastUpgradeCheck = 710;
 				ORGANIZATIONNAME = S10;
 				TargetAttributes = {
 					EA9F35391A74CC6900E0C65D = {
@@ -806,6 +845,10 @@
 					ProjectRef = F9F337BE1BFD42F600ACA98C /* RNFabricDigits.xcodeproj */;
 				},
 				{
+					ProductGroup = 07D33DEE1DA4B9DC001E9BF0 /* Products */;
+					ProjectRef = 168297B5B1B74556A80A1F5A /* RNGoogleSignin.xcodeproj */;
+				},
+				{
 					ProductGroup = F9DDF72F1BFFAC9F00D7A2FC /* Products */;
 					ProjectRef = F9DDF7291BFFAC8900D7A2FC /* RNOverlay.xcodeproj */;
 				},
@@ -822,6 +865,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		07D33DF31DA4B9DC001E9BF0 /* libRNGoogleSignin.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNGoogleSignin.a;
+			remoteRef = 07D33DF21DA4B9DC001E9BF0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		E27113F11C2FC50D00BDD54B /* libRCTCamera.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -887,6 +937,7 @@
 				F9DDF6B11BFDB3C700D7A2FC /* background.mp4 in Resources */,
 				EA7FB0981B5EF9D50052B394 /* Cabin-MediumItalic.ttf in Resources */,
 				EA3226031BFDAEEB00FF5074 /* MuteChecker.caf in Resources */,
+				078FB8271DA4606E00B418A8 /* GoogleService-Info.plist in Resources */,
 				EA7FB0991B5EF9D50052B394 /* Cabin-Regular.ttf in Resources */,
 				EA7FB0951B5EF9D50052B394 /* Cabin-BoldItalic.ttf in Resources */,
 				EA3336871BFF062800BF9A87 /* Conversation.xcassets in Resources */,
@@ -1192,9 +1243,37 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Google/Headers",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Crashlytics\"",
+					"\"${PODS_ROOT}/Headers/Public/Digits\"",
+					"\"${PODS_ROOT}/Headers/Public/Fabric\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/Google\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/Intercom\"",
+					"\"${PODS_ROOT}/Headers/Public/LayerKit\"",
+					"\"${PODS_ROOT}/Headers/Public/OneSignal\"",
+					"\"${PODS_ROOT}/Headers/Public/Reveal-iOS-SDK\"",
+					"\"${PODS_ROOT}/Headers/Public/TwitterCore\"",
+					"\"${PODS_ROOT}/Headers/Public/UXCam\"",
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+				);
 				INFOPLIST_FILE = "Taylr/Support/Taylr-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DDebug";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
@@ -1215,9 +1294,37 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Google/Headers",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Crashlytics\"",
+					"\"${PODS_ROOT}/Headers/Public/Digits\"",
+					"\"${PODS_ROOT}/Headers/Public/Fabric\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/Google\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/Intercom\"",
+					"\"${PODS_ROOT}/Headers/Public/LayerKit\"",
+					"\"${PODS_ROOT}/Headers/Public/OneSignal\"",
+					"\"${PODS_ROOT}/Headers/Public/Reveal-iOS-SDK\"",
+					"\"${PODS_ROOT}/Headers/Public/TwitterCore\"",
+					"\"${PODS_ROOT}/Headers/Public/UXCam\"",
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+				);
 				INFOPLIST_FILE = "Taylr/Support/Taylr-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DRelease";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

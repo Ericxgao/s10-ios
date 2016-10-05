@@ -33,13 +33,13 @@ class JoinNetworkScreen extends React.Component {
 
         <View style={styles.contentContainer}>
           <Text style={[styles.contentText, SHEET.baseText]}>
-            Taylr is currently only available to students at UBC.
+            Taylr is currently only available to students at UC Berkeley.
           </Text>
 
           <TouchableOpacity
               style={styles.button}
               onPress={() => {
-                const route = Router.instance.getUBCCWLRoute()
+                const route = Router.instance.getGoogleLoginRoute()
                 this.props.navigator.push(route);
               }}>
             <Image source={require('../img/ic-lock.png')} style={{ height: 15, resizeMode: 'contain' }} />
@@ -47,8 +47,8 @@ class JoinNetworkScreen extends React.Component {
           </TouchableOpacity>
         </View>
         <Text style={[styles.footerText, SHEET.baseText]}>
-          We never handle or store your CWL password. You authenticate directly with CWL
-          to verify your association with UBC and populate your profile.
+          We never handle or store your UC Berkeley password. You authenticate directly with CWL
+          to verify your association with UC Berkeley and populate your profile.
         </Text>
       </View>
     )

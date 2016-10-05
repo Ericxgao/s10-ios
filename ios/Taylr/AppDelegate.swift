@@ -161,6 +161,8 @@ class AppDelegate : UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
         if FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation) {
             return true
+        } else if RNGoogleSignin.application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation) {
+            return true
         }
         return deps.branch.branch.handleDeepLink(url)
     }

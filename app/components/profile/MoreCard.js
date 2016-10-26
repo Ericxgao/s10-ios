@@ -56,13 +56,6 @@ class MoreCard extends React.Component {
       <View style={styles.container}>
         { optionalUpgradeCard }
 
-        <TappableCard
-          hideSeparator={hideSeparatorForImportCourses}
-          style={styles.card}
-          onPress={ this.onImportCourses.bind(this)}>
-            <Text style={[SHEET.baseText]}>Import Courses</Text>
-        </TappableCard>
-
         <TappableCard style={styles.card} onPress={this.contactUs}>
           <Text style={[SHEET.baseText]}>Contact Us</Text>
         </TappableCard>

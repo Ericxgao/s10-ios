@@ -45,9 +45,9 @@ class AppConfig {
         switch audience {
         case .Dev:
 //            serverHostName = "localhost:3000"
-            serverHostName = "s10-dev.herokuapp.com"
+            serverHostName = "taylr.herokuapp.com"
             appHubApplicationId = "uCG85kfu67WewOZVEQBk"
-            layerURL = NSURL("layer:///apps/staging/49574578-72bb-11e5-9a72-a4a211002a87")
+            layerURL = NSURL("layer:///apps/staging/5082873e-9b39-11e6-bd38-f5093e032ac3")
             oneSignalAppId = "1fe37e84-77a0-11e5-ace7-2baf094fe5d2"
             ouralabsKey = "2207bb0177c84bd22085cb4e9018246f"
             branchKey = "key_test_nmeOiHF7jxXUcZPa8UdDbaacBxdYkU1J"

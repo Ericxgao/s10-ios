@@ -530,7 +530,6 @@ class Router {
           navigator={navigator}
           onFinishedLogin={(isValid) => {
             // if there is an error, it will pop up error.
-            console.log('honk');
             if (isValid) {
               const route = self.getProfileRoute({
                 userId: self.props.ddp.currentUserId,

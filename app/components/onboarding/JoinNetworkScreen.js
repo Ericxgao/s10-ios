@@ -21,8 +21,52 @@ let ProfileEditCard = require('../lib/ProfileEditCard');
 let Loader = require('../lib/Loader');
 
 import Router from '../../nav/Routes'
+import { connect } from 'react-redux/native';
+import { GoogleSignin } from 'react-native-google-signin';
+
+function mapStateToProps(state) {
+  return {
+    ddp: state.ddp,
+  }
+}
 
 class JoinNetworkScreen extends React.Component {
+
+  componentWillMount() {
+    const validEmailDomains = ["berkeley.edu"];
+    GoogleSignin.configure({
+      iosClientId: '749725548538-toleibucsvarl0r2si0m87ccnkm9vgnk.apps.googleusercontent.com', // only for iOS 
+    })
+    .then(() => {
+      // you can now call currentUserAsync() 
+    });
+
+    this.setState({validEmailDomains : validEmailDomains});
+  }
+
+  onLoginPress() {
+    GoogleSignin.signIn()
+    .then((user) => {
+      var domain = user.email.replace(/.*@/, "");
+      var isValid = this.state.validEmailDomains.includes(domain);
+      if (isValid) {
+        const route = Router.instance.getProfileRoute({
+          userId: this.props.ddp.currentUserId,
+          isEditable: true });
+        this.props.navigator.push(route);
+      } else {
+        this.props.dispatch({
+          type: 'INVALID_EMAIL_ERROR',
+          title: 'Invalid Email',
+          message: 'Sorry, you need a valid email for your university to log in.',
+        });
+      }
+    })
+    .catch((err) => {
+      console.log('Error signing in', err);
+    })
+    .done();
+  }
 
   render() {
     return (
@@ -38,12 +82,9 @@ class JoinNetworkScreen extends React.Component {
 
           <TouchableOpacity
               style={styles.button}
-              onPress={() => {
-                const route = Router.instance.getGoogleLoginRoute()
-                this.props.navigator.push(route);
-              }}>
+              onPress={this.onLoginPress.bind(this)}>
             <Image source={require('../img/ic-lock.png')} style={{ height: 15, resizeMode: 'contain' }} />
-            <Text style={[styles.buttonText, SHEET.baseText]}>Campus Wide Login</Text>
+            <Text style={[styles.buttonText, SHEET.baseText]}>Google Login</Text>
           </TouchableOpacity>
         </View>
         <Text style={[styles.footerText, SHEET.baseText]}>
@@ -96,4 +137,4 @@ var styles = StyleSheet.create({
   }
 });
 
-module.exports = JoinNetworkScreen;
+export default connect(mapStateToProps)(JoinNetworkScreen)

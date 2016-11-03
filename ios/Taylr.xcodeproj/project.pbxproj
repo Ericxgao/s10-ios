@@ -1025,7 +1025,7 @@
 		};
 		EA42164B1B3E211E00613EFA /* Fabric Script */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -1033,9 +1033,9 @@
 			name = "Fabric Script";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Uploading DSYM to Fabric\"\n\"${PODS_ROOT}/Fabric/iOS/Fabric.framework/run\" 67f7b1cc77f3e88b8e5b17a5bbc2ca6cb6f7ae53 1406e03532dd866d616ac19642903e2db44a36d93de980165c1e2e01fc17b215";
+			shellScript = "echo \"Uploading DSYM to Fabric\"\n\"${PODS_ROOT}/Fabric/run\" aee82a79724d4a3f6f54889380dc1f00451890e6 93164e1d0e6a18610f7941768c8cf89e08fab0ad1dd57fd2364bbfd5668f9abd\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

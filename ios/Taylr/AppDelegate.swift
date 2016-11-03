@@ -95,7 +95,7 @@ class AppDelegate : UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
 //        Crashlytics.sharedInstance().debugMode = true
         Crashlytics.sharedInstance().delegate = self
-        Fabric.with([Digits(), Crashlytics()])
+        Fabric.with([Digits.self, Crashlytics.self])
         deps = Dependencies(launchOptions: launchOptions)
         // Wait till after deps initialize (aka logger & analytics) before logging crash error
         if let crashReport = crashReport {

@@ -75,22 +75,6 @@ class TabNavigatorScreen extends React.Component {
 
           <ConversationListView {...this.props} />
         </TabNavigator.Item>
-
-        <TabNavigator.Item
-          badgeText={0} // TODO(qimingfang):
-          renderIcon={() => <Image source={require('../components/img/ic-events.png')}/>}
-          renderSelectedIcon={() => <Image style={styles.selected} source={require('../components/img/ic-events.png')}/>}
-          selectedTitleStyle={styles.selectedText}
-          onPress={() => {
-            this.props.dispatch({
-              type: 'CURRENT_SCREEN',
-              id: 'SCREEN_EVENTS'
-            })
-          }}
-          selected={this.props.currentScreen.id == 'SCREEN_EVENTS'}>
-
-          <EventCheckinScreen {...this.props} />
-        </TabNavigator.Item>
       </TabNavigator>
     )
   }

@@ -127,7 +127,6 @@ class AppDelegate : UIResponder, UIApplicationDelegate {
         deps.analytics.appDidLaunch(launchOptions)
 
         // Pre-heat the camera if we can
-        VideoMakerViewController.preloadRecorder()
         
         deps.session.appDidLaunch()
         DDLogInfo("SESSIONMARKER >>>>>>>> [End] Application Did Launch <<<<<<<<", tag: [

@@ -69,6 +69,7 @@ class ConversationViewController : UIViewController {
         VideoMakerViewController.regularWeightFontName = R.Fonts.cabinRegular.rawValue
         VideoMakerViewController.mediumWeightFontName = R.Fonts.cabinMedium.rawValue
         VideoMakerViewController.boldWeightFontName = R.Fonts.cabinBold.rawValue
+        VideoMakerViewController.preloadRecorder()
         videoMaker = VideoMakerViewController.mainController()
         videoMaker.videoMakerDelegate = self
         videoMaker.topOffset = 64.0

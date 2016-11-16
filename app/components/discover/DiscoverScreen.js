@@ -67,7 +67,7 @@ class DiscoverScreen extends React.Component {
               onPress={() => {
                 Analytics.track('Today: TapProfile');
 
-                const route = Router.instance.getProfileRoute({
+                let route = Router.instance.getProfileRoute({
                   user: candidate.user,
                   isFromDiscoveryScreen: true,
                   isEditable: false,
@@ -119,10 +119,19 @@ class DiscoverScreen extends React.Component {
                 { renderReasonSection(this.props.me, candidate.user) }
 
                 <View style={{ marginHorizontal: 10, marginBottom: 10}}>
-                  <CountdownTimer
-                    style={{borderColor: 'white', borderBottomRightRadius: 5}}
-                    navigator={this.props.navigator}
-                    candidateUser={candidate.user} />
+                  <TouchableOpacity
+                    onPress={() => {
+                      let recipientUser = candidate.user;
+                      let route = Router.instance.getSendMessageToUserRoute(recipientUser);
+                      this.props.navigator.parentNavigator.push(route);
+                    }}>
+                    <View style={[styles.messageButton, this.props.style]}>
+                      <Image source={require('../img/ic-start-chat.png')} />
+                      <Text style={[styles.messageButtonText, SHEET.baseText]}>
+                        Send a Message!
+                      </Text>
+                    </View>
+                  </TouchableOpacity>
                 </View>
               </Card>
             </View>
@@ -208,17 +217,15 @@ var styles = StyleSheet.create({
     paddingBottom: 10,
   },
   messageButton: {
-    height: 40,
+    height: 50,
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
-    marginHorizontal: width / 32,
     backgroundColor: COLORS.button,
-    marginBottom: 10,
     borderRadius : 3,
   },
   messageButtonText: {
-    paddingLeft: width / 64,
+    paddingLeft: 5,
     fontSize: 18,
     color: COLORS.white,
   },

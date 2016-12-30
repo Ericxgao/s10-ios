@@ -17,7 +17,7 @@ const logger = new (require('../../../modules/Logger'))('EditPhotoHeader');
 export default function editPhotoHeader(onUploadImage, avatarUrl, coverUrl) {
   return (
     <HeaderBanner url={coverUrl} height={height/3}>
-      <TouchableOpacity onPress={() => { return onUploadImage({ type: 'PROFILE_PIC' }) }}>
+      <TouchableOpacity onPressOut={() => { return onUploadImage({ type: 'PROFILE_PIC' }) }}>
         <View style={styles.avatarContainer}>
           <Image style={styles.avatar} source={{ uri: avatarUrl }} />
           <View style={styles.button}>
